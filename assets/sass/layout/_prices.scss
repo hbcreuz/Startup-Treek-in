@@ -1,0 +1,46 @@
+.prices {
+    /*background-image: url(../img/bg-price.svg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    padding-top: 15vw;*/
+    background-color: $onix;
+    position: relative;
+}
+
+.prices::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    height: 200px;
+    width: 140%;
+    //border-style: solid;
+    background: url(../img/bg-price.svg);
+    background-size: 100%;
+    z-index: -1;
+    @media (max-width: 576px) {
+        top: -15%;
+    }
+}
+
+.contenedor-card {
+    //background-color: $onix;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        margin-bottom: 3vw;
+        ul {
+            margin-left: 1.5vw;
+        }
+    }
+}
+
+.card:hover {
+    box-shadow: 1rem 1rem 2rem $nickel;
+}
+
+.boton-bajo {
+    margin-top: 110px;
+}
